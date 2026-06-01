@@ -1,0 +1,312 @@
+{
+  "Metadata": {
+    "title": "Martinshof Rothenburg Diakoniewerk – Work, Education & Participation",
+    "description": "Martinshof Rothenburg Diakoniewerk supports people with assistance needs through work participation, development, consulting and individual opportunities.",
+    "keywords": "Martinshof, Rothenburg, Diakoniewerk, work participation, inclusion, support, education",
+    "siteName": "Martinshof Rothenburg Diakoniewerk",
+    "ogTitle": "Martinshof Rothenburg Diakoniewerk",
+    "ogDescription": "Work participation, development and individual support for people with assistance needs.",
+    "organizationName": "Martinshof Rothenburg Diakoniewerk"
+  },
+
+
+  "Header": {
+  "subtitle": "Apartments",
+  "nav": {
+    "apartments": "Apartments",
+    "benefits": "Benefits",
+    "conditions": "Conditions",
+    "contact": "Contact"
+  },
+  "cta": "Request accommodation",
+  "menuLabel": "Open menu"
+},
+
+
+"Hero": {
+  "badge": "Company apartments in Weinviertel",
+  "title": "Comfortable accommodation for your employees",
+  "description": "Ideal for construction, installation and industrial projects in Lower Austria. Quiet location, practical facilities and uncomplicated booking.",
+  "button": "Request accommodation",
+  "imageAlt": "Martinshof company apartment in Weinviertel",
+  "stats": {
+    "persons": "Persons per apartment",
+    "beds": "Single beds",
+    "kitchen": "Private kitchen"
+  }
+},
+"LocaleSwitcher": {
+  "ariaLabel": "Change language",
+  "languages": {
+    "de": "German",
+    "en": "English"
+  }
+},
+
+"TargetGroups": {
+  "eyebrow": "For companies",
+  "title": "Which companies this is suitable for",
+  "description": "Our apartments are designed for companies that assign employees to projects in Austria. Suitable for construction, assembly and industrial teams that need a reliable and clear accommodation solution.",
+  "cards": {
+    "construction": "Construction companies",
+    "assembly": "Assembly companies",
+    "industry": "Industrial projects",
+    "teams": "Project teams in Austria"
+  }
+},
+
+
+
+"WhyMartinshof": {
+  "eyebrow": "Why Martinshof",
+  "title": "Why companies choose us",
+  "description": "As a family-run winery in the Weinviertel region, we offer not only accommodation but also a reliable and practical solution for companies and their employees.",
+  "cards": {
+    "location": "Quiet location with excellent accessibility",
+    "communication": "Fast communication and reliable coordination",
+    "apartments": "Well-maintained and functional apartments"
+  }
+},
+
+
+
+
+
+"Funktional": {
+  "eyebrow": "Our apartments",
+  "title": "Functional. Clear. Designed for work teams.",
+  "description": "The apartments provide everything employees need during a project: separate sleeping areas, a private kitchen and a quiet environment after work.",
+  "images": {
+    "bedroom": "Martinshof apartment bedroom",
+    "livingArea": "Martinshof apartment living area"
+  },
+  "features": {
+    "apartments": {
+      "title": "2–3 separate apartments",
+      "text": "Flexible layout for smaller and larger work teams."
+    },
+    "persons": {
+      "title": "4–6 persons per apartment",
+      "text": "Enough space for employees during short-term or long-term projects."
+    },
+    "kitchen": {
+      "title": "Private kitchen",
+      "text": "Practically equipped for shared cooking and self-catering."
+    },
+    "livingArea": {
+      "title": "Living area",
+      "text": "A separate area for eating, relaxing and gathering."
+    },
+    "equipped": {
+      "title": "Fully equipped",
+      "text": "Everything essential is available – functional, clean and uncomplicated."
+    }
+  },
+  "houses": {
+    "anneMari": {
+      "name": "Apartment Anne-Mari",
+      "text": "Functional accommodation for teams that need a clear and uncomplicated housing solution."
+    },
+    "erich": {
+      "name": "Apartment Erich",
+      "text": "Ideal for fitters, construction and project teams that need separate sleeping options."
+    },
+    "herwig": {
+      "name": "Apartment Herwig",
+      "text": "Quietly located, well maintained and designed for longer employee stays."
+    }
+  }
+},
+
+
+
+"Footer": {
+  "country": "Austria",
+  "impressum": "Legal Notice",
+  "privacy": "Privacy Policy",
+  "createdBy": "Created by"
+},
+
+
+"First": {
+  "imageAlt": "Martinshof Apartments"
+},
+
+
+"CookieBanner": {
+  "label": "Cookies",
+  "title": "Cookies & Privacy",
+  "text": "This website uses technically necessary cookies to ensure the functionality of the website. Further information can be found in our",
+  "privacyLink": "Privacy Policy",
+  "decline": "Decline",
+  "accept": "Accept"
+},
+
+"ContactSection": {
+"eyebrow": "Contact",
+"title": "Write to us",
+"description": "We will get back to you as soon as possible with suitable information.",
+"address": "Hauptstraße 28, 2183 St. Ulrich – Neusiedl/Zaya, Austria",
+
+"fields": {
+"name": "Name *",
+"email": "Email *",
+"company": "Company",
+"phone": "Phone",
+"message": "Message *"
+},
+
+"privacyPrefix": "I consent to the processing of my data in accordance with the",
+"privacyLink": "Privacy Policy",
+"privacySuffix": "*",
+
+"button": "Send request",
+"sending": "Sending...",
+
+"success": "Thank you for your request! We have received your message and will get back to you as soon as possible.",
+
+"errors": {
+"nameRequired": "Please enter your name.",
+"nameInvalid": "The name may only contain letters and must be at least 2 characters long.",
+"emailRequired": "Please enter your email address.",
+"emailInvalid": "Please enter a valid email address.",
+"messageRequired": "Please write a message.",
+"privacyRequired": "Please agree to the Privacy Policy.",
+"server": "Error while sending. Please try again later."
+}
+
+
+},
+
+"ConditionsSection": {
+  "eyebrow": "Conditions",
+  "title": "How we work",
+  "description": "No complicated booking process, but direct coordination and a solution that fits your project.",
+  "button": "Request an offer",
+  "process": {
+    "rentalDuration": "Flexible rental period: weekly or monthly",
+    "pricing": "Individual pricing depending on your needs",
+    "invoice": "Company invoice provided as standard",
+    "transparentProcess": "Clear and transparent process",
+    "shortNotice": "Short-notice solutions possible"
+  }
+},
+
+
+"BenefitsSection": {
+  "cards": {
+    "location": {
+      "title": "Quiet location",
+      "text": "Relaxed surroundings in the Weinviertel region"
+    },
+    "parking": {
+      "title": "On-site parking",
+      "text": "Directly at the apartments"
+    },
+    "wifi": {
+      "title": "Wi-Fi included",
+      "text": "For work and communication"
+    },
+    "cleaning": {
+      "title": "Cleaning every 14 days",
+      "text": "Clean and reliable"
+    }
+  }
+},
+
+
+"DatenschutzPage": {
+  "homeHref": "/en",
+  "backHome": "Back to homepage",
+  "eyebrow": "Privacy",
+  "title": "Privacy Policy",
+  "country": "Austria",
+  "updated": "Last updated: May 2026",
+  "sections": {
+    "responsible": {
+      "title": "1. Controller"
+    },
+    "general": {
+      "title": "2. General information",
+      "text": "The protection of your personal data is important to us. We treat your personal data confidentially and in accordance with the applicable data protection regulations."
+    },
+    "contactForm": {
+      "title": "3. Contact form",
+      "text": "If you contact us via the contact form, we use the information you provide exclusively to process your request.",
+      "items": {
+        "name": "Name",
+        "email": "Email address",
+        "phone": "Phone number",
+        "company": "Company, optional",
+        "message": "Message"
+      }
+    },
+    "legalBasis": {
+      "title": "4. Legal basis",
+      "before": "Processing is carried out in accordance with",
+      "between": "and",
+      "after": "if your request serves to initiate a contractual relationship."
+    },
+    "storage": {
+      "title": "5. Storage period",
+      "text": "Your data will only be stored for as long as necessary to process your request or as required by statutory retention obligations."
+    },
+    "disclosure": {
+      "title": "6. Disclosure of data",
+      "text": "Your personal data will not be passed on to third parties unless there is a legal obligation to do so. Email services are used for the technical transmission of contact requests."
+    },
+    "cookies": {
+      "title": "7. Cookies",
+      "text": "This website uses technically necessary cookies. Analytics or marketing cookies are only used with your prior consent."
+    },
+    "rights": {
+      "title": "8. Your rights",
+      "items": {
+        "information": "Information about stored data",
+        "correction": "Correction of incorrect data",
+        "deletion": "Deletion of your data",
+        "restriction": "Restriction of processing",
+        "portability": "Data portability",
+        "objection": "Objection to processing"
+      }
+    },
+    "contact": {
+      "title": "9. Contact",
+      "text": "If you have any questions about data protection, please contact us at:"
+    }
+  }
+},
+
+"ImpressumPage": {
+  "homeHref": "/en",
+  "backHome": "Back to homepage",
+  "eyebrow": "Legal information",
+  "title": "Legal Notice",
+  "country": "Austria",
+  "sections": {
+    "operator": {
+      "title": "Operator",
+      "manager": "Managing Director"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "Phone",
+      "mobile": "Mobile"
+    },
+    "company": {
+      "title": "Company details",
+      "court": "Commercial register court"
+    },
+    "responsible": {
+      "title": "Responsible for content"
+    }
+  },
+  "webdesign": {
+    "label": "Web Design & Development"
+  }
+}
+
+
+
+
+}

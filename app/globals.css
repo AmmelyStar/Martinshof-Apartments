@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --gold: #b98b3c;
+  --gray-green: #647268;
+  --dark-green: #18352a;
+  --dark-green-hover: #10251d;
+  --divide: #dfd2bd;
+  --bezel: #f6efe4;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: var(--gold);
+  --color-gray-green: var(--gray-green);
+  --color-dark-green: var(--dark-green);
+  --color-dark-green-hover: var(--dark-green-hover);
+  --color-divide: var(--divide);
+  --color-bezel: var(--bezel);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}

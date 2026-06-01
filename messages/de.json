@@ -1,0 +1,308 @@
+{
+  "Metadata": {
+    "title": "Martinshof Rothenburg Diakoniewerk – Arbeit, Bildung & Teilhabe",
+    "description": "Martinshof Rothenburg Diakoniewerk bietet Menschen mit Unterstützungsbedarf berufliche Teilhabe, Förderung, Beratung und individuelle Entwicklungsmöglichkeiten.",
+    "keywords": "Martinshof, Rothenburg, Diakoniewerk, berufliche Teilhabe, Werkstatt, Inklusion, Unterstützung, Bildung",
+    "siteName": "Martinshof Rothenburg Diakoniewerk",
+    "ogTitle": "Martinshof Rothenburg Diakoniewerk",
+    "ogDescription": "Berufliche Teilhabe, Förderung und individuelle Unterstützung für Menschen mit Assistenzbedarf.",
+    "organizationName": "Martinshof Rothenburg Diakoniewerk"
+  },
+
+
+  "Header": {
+  "subtitle": "Apartments",
+  "nav": {
+    "apartments": "Apartments",
+    "benefits": "Vorteile",
+    "conditions": "Konditionen",
+    "contact": "Kontakt"
+  },
+  "cta": "Unterkunft anfragen",
+  "menuLabel": "Menü öffnen"
+},
+
+
+"Hero": {
+  "badge": "Firmenapartments im Weinviertel",
+  "title": "Komfortable Unterkünfte für Ihre Mitarbeiter",
+  "description": "Ideal für Bau-, Montage- und Industrieprojekte in Niederösterreich. Ruhige Lage, klare Ausstattung und unkomplizierte Abwicklung.",
+  "button": "Unterkunft anfragen",
+  "imageAlt": "Martinshof Firmenapartment im Weinviertel",
+  "stats": {
+    "persons": "Personen pro Apartment",
+    "beds": "Einzelbetten",
+    "kitchen": "Eigene Wohnküche"
+  }
+},
+
+
+
+"LocaleSwitcher": {
+  "ariaLabel": "Sprache wechseln",
+  "languages": {
+    "de": "Deutsch",
+    "en": "Englisch"
+  }
+},
+
+"TargetGroups": {
+  "eyebrow": "Für Unternehmen",
+  "title": "Für welche Unternehmen das geeignet ist",
+  "description": "Unsere Apartments sind für Unternehmen gedacht, die Mitarbeiter für Projekte in Österreich einsetzen. Geeignet für Teams aus Bau, Montage und Industrie, die eine zuverlässige und klare Unterkunftslösung benötigen.",
+  "cards": {
+    "construction": "Bauunternehmen",
+    "assembly": "Montagefirmen",
+    "industry": "Industrieprojekte",
+    "teams": "Projektteams in Österreich"
+  }
+},
+
+
+"WhyMartinshof": {
+  "eyebrow": "Warum Martinshof",
+  "title": "Warum Unternehmen uns wählen",
+  "description": "Als familiengeführtes Weingut im Weinviertel bieten wir nicht nur Unterkünfte, sondern eine klare, funktionierende Lösung für Unternehmen und ihre Mitarbeiter.",
+  "cards": {
+    "location": "Ruhige Lage mit guter Erreichbarkeit",
+    "communication": "Schnelle Kommunikation und verlässliche Abstimmung",
+    "apartments": "Gepflegte, funktionale Apartments"
+  }
+},
+
+
+
+"Funktional": {
+  "eyebrow": "Unsere Apartments",
+  "title": "Funktional. Klar. Auf Arbeitsteams ausgelegt.",
+  "description": "Die Apartments bieten alles, was Mitarbeiter während eines Projekts brauchen: separate Schlafbereiche, eigene Küche und eine ruhige Umgebung nach der Arbeit.",
+  "images": {
+    "bedroom": "Martinshof Apartment Schlafzimmer",
+    "livingArea": "Martinshof Apartment Wohnbereich"
+  },
+  "features": {
+    "apartments": {
+      "title": "2–3 separate Apartments",
+      "text": "Flexible Aufteilung für kleinere und größere Arbeitsteams."
+    },
+    "persons": {
+      "title": "4–6 Personen pro Apartment",
+      "text": "Ausreichend Platz für Mitarbeiter während kurz- oder langfristiger Projekte."
+    },
+    "kitchen": {
+      "title": "Eigene Wohnküche",
+      "text": "Praktisch ausgestattet für gemeinsames Kochen und Selbstversorgung."
+    },
+    "livingArea": {
+      "title": "Aufenthaltsbereich",
+      "text": "Ein separater Bereich zum Essen, Entspannen und Zusammenkommen."
+    },
+    "equipped": {
+      "title": "Voll ausgestattet",
+      "text": "Alles Wesentliche ist vorhanden – funktional, sauber und unkompliziert."
+    }
+  },
+  "houses": {
+    "anneMari": {
+      "name": "Apartment Anne-Mari",
+      "text": "Funktionale Unterkunft für Teams, die eine klare und unkomplizierte Wohnlösung benötigen."
+    },
+    "erich": {
+      "name": "Apartment Erich",
+      "text": "Ideal für Monteure, Bau- und Projektteams mit Bedarf an separaten Schlafmöglichkeiten."
+    },
+    "herwig": {
+      "name": "Apartment Herwig",
+      "text": "Ruhig gelegen, gepflegt und auf längere Aufenthalte von Mitarbeitern ausgelegt."
+    }
+  }
+},
+
+"Footer": {
+  "country": "Österreich",
+  "impressum": "Impressum",
+  "privacy": "Datenschutz",
+  "createdBy": "Erstellt von"
+},
+
+"First": {
+  "imageAlt": "Martinshof Apartments"
+},
+
+
+"CookieBanner": {
+  "label": "Cookies",
+  "title": "Cookies & Datenschutz",
+  "text": "Diese Website verwendet technisch notwendige Cookies, um die Funktionalität der Website zu gewährleisten. Weitere Informationen finden Sie in unserer",
+  "privacyLink": "Datenschutzerklärung",
+  "decline": "Ablehnen",
+  "accept": "Akzeptieren"
+},
+
+"ContactSection": {
+"eyebrow": "Kontakt",
+"title": "Schreiben Sie uns",
+"description": "Wir melden uns schnellstmöglich mit passenden Informationen bei Ihnen.",
+"address": "Hauptstraße 28, 2183 St. Ulrich – Neusiedl/Zaya, Österreich",
+
+"fields": {
+"name": "Name *",
+"email": "E-Mail *",
+"company": "Unternehmen",
+"phone": "Telefon",
+"message": "Nachricht *"
+},
+
+"privacyPrefix": "Ich willige in die Verarbeitung meiner Daten gemäß der",
+"privacyLink": "Datenschutzerklärung",
+"privacySuffix": "ein. *",
+
+"button": "Anfrage senden",
+"sending": "Wird gesendet...",
+
+"success": "Vielen Dank für Ihre Anfrage! Wir haben Ihre Nachricht erhalten und werden uns schnellstmöglich bei Ihnen melden.",
+
+"errors": {
+"nameRequired": "Bitte geben Sie Ihren Namen ein.",
+"nameInvalid": "Der Name darf nur Buchstaben enthalten und muss mindestens 2 Zeichen lang sein.",
+"emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+"emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+"messageRequired": "Bitte schreiben Sie eine Nachricht.",
+"privacyRequired": "Bitte stimmen Sie der Datenschutzerklärung zu.",
+"server": "Fehler beim Senden. Bitte versuchen Sie es später erneut."
+}
+
+
+},
+
+
+"ConditionsSection": {
+  "eyebrow": "Konditionen",
+  "title": "So arbeiten wir",
+  "description": "Keine komplizierten Buchungswege, sondern eine direkte Abstimmung und eine Lösung, die zum Projekt passt.",
+  "button": "Angebot anfordern",
+  "process": {
+    "rentalDuration": "Flexible Mietdauer: wöchentlich oder monatlich",
+    "pricing": "Individuelle Preisgestaltung je nach Bedarf",
+    "invoice": "Firmenrechnung selbstverständlich",
+    "transparentProcess": "Klare und transparente Abwicklung",
+    "shortNotice": "Kurzfristige Lösungen möglich"
+  }
+},
+
+"BenefitsSection": {
+  "cards": {
+    "location": {
+      "title": "Ruhige Lage",
+      "text": "Entspannte Umgebung im Weinviertel"
+    },
+    "parking": {
+      "title": "Parkplätze vor Ort",
+      "text": "Direkt bei den Apartments"
+    },
+    "wifi": {
+      "title": "WLAN inklusive",
+      "text": "Für Arbeit und Kommunikation"
+    },
+    "cleaning": {
+      "title": "Reinigung alle 14 Tage",
+      "text": "Sauber und zuverlässig"
+    }
+  }
+},
+
+
+
+"DatenschutzPage": {
+  "homeHref": "/de",
+  "backHome": "Zurück zur Startseite",
+  "eyebrow": "Datenschutz",
+  "title": "Datenschutzerklärung",
+  "country": "Österreich",
+  "updated": "Stand: Mai 2026",
+  "sections": {
+    "responsible": {
+      "title": "1. Verantwortlicher"
+    },
+    "general": {
+      "title": "2. Allgemeine Hinweise",
+      "text": "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften."
+    },
+    "contactForm": {
+      "title": "3. Kontaktformular",
+      "text": "Wenn Sie uns über das Kontaktformular kontaktieren, verwenden wir Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage.",
+      "items": {
+        "name": "Name",
+        "email": "E-Mail-Adresse",
+        "phone": "Telefonnummer",
+        "company": "Unternehmen, optional",
+        "message": "Nachricht"
+      }
+    },
+    "legalBasis": {
+      "title": "4. Rechtsgrundlage",
+      "before": "Die Verarbeitung erfolgt gemäß",
+      "between": "sowie",
+      "after": "sofern Ihre Anfrage der Anbahnung eines Vertragsverhältnisses dient."
+    },
+    "storage": {
+      "title": "5. Speicherdauer",
+      "text": "Ihre Daten werden nur so lange gespeichert, wie dies für die Bearbeitung Ihrer Anfrage erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen."
+    },
+    "disclosure": {
+      "title": "6. Weitergabe von Daten",
+      "text": "Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt nicht, sofern keine gesetzliche Verpflichtung besteht. Zur technischen Übermittlung von Kontaktanfragen werden E-Mail-Dienste verwendet."
+    },
+    "cookies": {
+      "title": "7. Cookies",
+      "text": "Diese Website verwendet technisch notwendige Cookies. Analyse- oder Marketing-Cookies werden nur nach entsprechender Einwilligung eingesetzt."
+    },
+    "rights": {
+      "title": "8. Ihre Rechte",
+      "items": {
+        "information": "Auskunft über gespeicherte Daten",
+        "correction": "Berichtigung unrichtiger Daten",
+        "deletion": "Löschung Ihrer Daten",
+        "restriction": "Einschränkung der Verarbeitung",
+        "portability": "Datenübertragbarkeit",
+        "objection": "Widerspruch gegen die Verarbeitung"
+      }
+    },
+    "contact": {
+      "title": "9. Kontakt",
+      "text": "Bei Fragen zum Datenschutz kontaktieren Sie uns bitte unter:"
+    }
+  }
+},
+
+"ImpressumPage": {
+  "homeHref": "/de",
+  "backHome": "Zurück zur Startseite",
+  "eyebrow": "Rechtliche Angaben",
+  "title": "Impressum",
+  "country": "Österreich",
+  "sections": {
+    "operator": {
+      "title": "Betreiber",
+      "manager": "Geschäftsführer"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "phone": "Telefon",
+      "mobile": "Mobil"
+    },
+    "company": {
+      "title": "Unternehmensdaten",
+      "court": "Firmenbuchgericht"
+    },
+    "responsible": {
+      "title": "Verantwortlich für den Inhalt"
+    }
+  },
+  "webdesign": {
+    "label": "Webdesign & Entwicklung"
+  }
+}
+}
+
+
