@@ -2,32 +2,43 @@
 
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { useState } from "react";
+import { useSyncExternalStore } from "react";
 
 const COOKIE_CONSENT_KEY = "martinshof-cookie-consent";
 
-function getInitialVisibility() {
-  if (typeof window === "undefined") {
-    return false;
-  }
+function subscribe(callback: () => void) {
+  window.addEventListener("storage", callback);
+  return () => window.removeEventListener("storage", callback);
+}
 
-  return !localStorage.getItem(COOKIE_CONSENT_KEY);
+function getSnapshot() {
+  return localStorage.getItem(COOKIE_CONSENT_KEY);
+}
+
+function getServerSnapshot() {
+  return "accepted";
 }
 
 export default function CookieBanner() {
-  const [isVisible, setIsVisible] = useState(getInitialVisibility);
+  const consent = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot
+  );
 
   const t = useTranslations("CookieBanner");
   const locale = useLocale();
 
+  const isVisible = !consent;
+
   function acceptCookies() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "accepted");
-    setIsVisible(false);
+    window.dispatchEvent(new StorageEvent("storage"));
   }
 
   function declineCookies() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "declined");
-    setIsVisible(false);
+    window.dispatchEvent(new StorageEvent("storage"));
   }
 
   if (!isVisible) return null;

@@ -2,6 +2,8 @@
 
 "use client";
 
+
+import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import LocalSwitcher from "./LocalSwitcher";
@@ -15,20 +17,26 @@ export default function Header() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-gold bg-(--bezel)/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#top" className="flex items-center gap-3" onClick={closeMenu}>
-          <div className="flex h-11 w-11 items-center justify-center rounded-full border border-gold font-serif text-2xl uppercase text-gold bg-be">
-            M
-          </div>
+     <a href="#top" className="flex items-center gap-4" onClick={closeMenu}>
+  <Image
+    src="/logo-martinshof.png"
+    alt="Martinshof Apartments"
+    width={120}
+    height={120}
+    priority
+    className="h-22 w-auto"
+  />
 
-          <div className="leading-tight">
-            <div className="font-serif text-xl tracking-widest uppercase text-dark-green">
-              Martinshof
-            </div>
-            <div className="text-xs uppercase tracking-[0.2em] text-gold">
-              {t("subtitle")}
-            </div>
-          </div>
-        </a>
+  <div className="leading-none">
+    <div className="font-serif text-2xl tracking-[0.15em] uppercase text-dark-green">
+      Martinshof
+    </div>
+
+    <div className="mt-1 text-xs uppercase tracking-[0.45em] text-gold">
+      Apartments
+    </div>
+  </div>
+</a>
 
         <nav className="hidden items-center gap-8 text-sm text-(--gray-green) lg:flex">
           <a className="transition hover:text-(--gold)" href="#apartments">

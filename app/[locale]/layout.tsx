@@ -1,17 +1,22 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import "../globals.css";
 import CookieBanner from "@/components/CookieBanner";
 
+const locales = ["de", "en"] as const;
 
-
-const locales = ["de", "en"];
+type Locale = (typeof locales)[number];
 
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 };
+
+function isValidLocale(locale: string): locale is Locale {
+  return locales.includes(locale as Locale);
+}
 
 export async function generateMetadata({
   params,
@@ -19,6 +24,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+
+  if (!isValidLocale(locale)) {
+    notFound();
+  }
 
   const t = await getTranslations({
     locale,
@@ -30,68 +39,12 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(baseUrl),
-
     title: {
       default: t("title"),
       template: `%s | ${t("siteName")}`,
     },
-
     description: t("description"),
     keywords: t("keywords"),
-
-    applicationName: t("siteName"),
-    creator: t("siteName"),
-    publisher: t("siteName"),
-
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        de: "/de",
-        en: "/en",
-        "x-default": "/de",
-      },
-    },
-
-    openGraph: {
-      type: "website",
-      locale: locale === "de" ? "de_DE" : "en_US",
-      url: `/${locale}`,
-      siteName: t("siteName"),
-      title: t("ogTitle"),
-      description: t("ogDescription"),
-      images: [
-        {
-          url: "/og-image.jpg",
-          width: 1200,
-          height: 630,
-          alt: t("siteName"),
-        },
-      ],
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      title: t("ogTitle"),
-      description: t("ogDescription"),
-      images: ["/og-image.jpg"],
-    },
-
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-        "max-video-preview": -1,
-      },
-    },
-
-    icons: {
-      icon: "/favicon.ico",
-      apple: "/apple-touch-icon.png",
-    },
   };
 }
 
@@ -102,17 +55,18 @@ export function generateStaticParams() {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
+  if (!isValidLocale(locale)) {
+    notFound();
+  }
+
   setRequestLocale(locale);
 
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return (
-    
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-           <CookieBanner />
-        </NextIntlClientProvider>
-      
-    
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      {children}
+      <CookieBanner />
+    </NextIntlClientProvider>
   );
 }

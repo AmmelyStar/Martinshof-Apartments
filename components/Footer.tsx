@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
 
   return (
     <footer className="bg-dark-green/90 px-5 py-12 text-white lg:px-8">
@@ -29,14 +30,14 @@ export default function Footer() {
 
         <div className="flex flex-col items-center gap-3 text-sm text-white/70 md:items-end md:text-right">
           <Link
-            href="/impressum"
+            href={`/${locale}/impressum`}
             className="transition hover:text-gold"
           >
             {t("impressum")}
           </Link>
 
           <Link
-            href="/datenschutz"
+            href={`/${locale}/datenschutz`}
             className="transition hover:text-gold"
           >
             {t("privacy")}
