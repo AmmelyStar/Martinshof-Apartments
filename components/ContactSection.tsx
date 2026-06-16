@@ -96,23 +96,33 @@ export default function ContactSection() {
 
   return (
     <section id="kontakt" className="px-5 pb-24 lg:px-8">
-      <div className="mx-auto grid max-w-7xl gap-10 rounded-[2.5rem] bg-white p-6 shadow-2xl shadow-dark-green/10 md:p-10 lg:grid-cols-[0.85fr_1.15fr]">
-        <div className="rounded-4xl bg-dark-green/90 p-8 text-white md:p-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-gold">
+      <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] bg-white p-6 shadow-2xl shadow-black/10 md:p-10 lg:grid-cols-[0.85fr_1.15fr]">
+
+        <div className="rounded-[2rem] bg-[#0b4563] p-8 text-white md:p-10">
+          <p className="text-xs uppercase tracking-[0.22em] text-gold">
             {t("eyebrow")}
           </p>
 
-          <h2 className="mt-4 font-serif text-4xl tracking-wide">
-            {t("title")}
-          </h2>
+          <h2 className="mt-4 font-serif text-3xl font-bold uppercase leading-tight tracking-[0.04em] text-white md:text-4xl">
+  {t("title")}
+</h2>
 
-          <p className="mt-5 border-b-2 border-gold/30 pb-10 text-balance text-white">
+          <div className="mt-5 flex items-center gap-4">
+            <span className="h-px flex-1 bg-gold/50" />
+            <span className="text-gold">✦</span>
+            <span className="h-px flex-1 bg-gold/50" />
+          </div>
+
+          <p className="mt-6 text-white/85">
             {t("description")}
           </p>
 
-          <div className="mt-10 space-y-5 text-white/86">
+          <div className="mt-10 space-y-5 text-white/85">
             <p>
-              <a href="tel:+436643567360" className="transition hover:text-gold">
+              <a
+                href="tel:+436643567360"
+                className="transition hover:text-gold"
+              >
                 +43 664 3567 360
               </a>
             </p>
@@ -131,45 +141,49 @@ export default function ContactSection() {
         </div>
 
         <form onSubmit={handleSubmit} className="grid gap-4 self-center">
+
           <div className="grid gap-4 md:grid-cols-2">
             <input
-              className="rounded-2xl border border-[#eadfcd] bg-[#fbf8f2] px-5 py-4 outline-none transition focus:border-gold"
-              placeholder={t("fields.name")}
               name="name"
               type="text"
-              minLength={2}
+              placeholder={t("fields.name")}
+              className="rounded-xl border border-gold/20 bg-white px-5 py-4 outline-none transition focus:border-gold"
             />
 
             <input
-              className="rounded-2xl border border-[#eadfcd] bg-[#fbf8f2] px-5 py-4 outline-none transition focus:border-gold"
-              placeholder={t("fields.email")}
               name="email"
               type="email"
+              placeholder={t("fields.email")}
+              className="rounded-xl border border-gold/20 bg-white px-5 py-4 outline-none transition focus:border-gold"
             />
           </div>
 
           <input
-            className="rounded-2xl border border-[#eadfcd] bg-[#fbf8f2] px-5 py-4 outline-none transition focus:border-gold"
-            placeholder={t("fields.company")}
             name="company"
             type="text"
+            placeholder={t("fields.company")}
+            className="rounded-xl border border-gold/20 bg-white px-5 py-4 outline-none transition focus:border-gold"
           />
 
           <input
-            className="rounded-2xl border border-[#eadfcd] bg-[#fbf8f2] px-5 py-4 outline-none transition focus:border-gold"
-            placeholder={t("fields.phone")}
             name="phone"
             type="tel"
+            placeholder={t("fields.phone")}
+            className="rounded-xl border border-gold/20 bg-white px-5 py-4 outline-none transition focus:border-gold"
           />
 
           <textarea
-            className="min-h-36 resize-none rounded-2xl border border-[#eadfcd] bg-[#fbf8f2] px-5 py-4 outline-none transition focus:border-gold"
-            placeholder={t("fields.message")}
             name="message"
+            placeholder={t("fields.message")}
+            className="min-h-40 resize-none rounded-xl border border-gold/20 bg-white px-5 py-4 outline-none transition focus:border-gold"
           />
 
-          <label className="flex items-start gap-3 text-sm leading-6 text-gray-green">
-            <input type="checkbox" className="mt-1" name="privacy" />
+          <label className="flex items-start gap-3 text-sm text-foreground/70">
+            <input
+              type="checkbox"
+              name="privacy"
+              className="mt-1"
+            />
 
             <span>
               {t("privacyPrefix")}{" "}
@@ -177,7 +191,7 @@ export default function ContactSection() {
                 href={`/${locale}/datenschutz`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-gold transition hover:underline"
+                className="text-gold hover:underline"
               >
                 {t("privacyLink")}
               </a>{" "}
@@ -185,21 +199,33 @@ export default function ContactSection() {
             </span>
           </label>
 
-          {error && <p className="text-sm font-medium text-red-600">{error}</p>}
+          {error && (
+            <p className="text-sm font-medium text-red-600">
+              {error}
+            </p>
+          )}
 
           {status && (
-            <p className="rounded-2xl bg-green-50 px-5 py-4 text-sm font-medium text-green-800">
+            <p className="rounded-xl bg-green-50 px-5 py-4 text-sm text-green-800">
               {status}
             </p>
           )}
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="mt-2 rounded-full bg-gold px-7 py-4 font-semibold text-white transition-all duration-500 ease-out hover:-translate-y-0.5 hover:bg-(--dark-green)/90 disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            {loading ? t("sending") : t("button")}
-          </button>
+          <div className="mt-4">
+            <button
+              type="submit"
+              disabled={loading}
+              className="group inline-flex items-center gap-5 rounded-full bg-gold px-10 py-4 font-bold text-white shadow-lg shadow-gold/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#b98b3c]"
+            >
+              <span>
+                {loading ? t("sending") : t("button")}
+              </span>
+
+              <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </button>
+          </div>
         </form>
       </div>
     </section>

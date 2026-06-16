@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-dark-green/90 px-5 py-12 text-white lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-8 text-center md:grid-cols-[1fr_1.2fr_1fr] md:text-left">
         <div>
-          <div className="font-serif text-2xl">
+          <div className="font-serif text-2xl  text-white">
             Martinshof Apartments
           </div>
 

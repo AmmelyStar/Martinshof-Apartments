@@ -2,8 +2,58 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import localFont from "next/font/local";
 import "../globals.css";
 import CookieBanner from "@/components/CookieBanner";
+
+const nunitoSans = localFont({
+  src: [
+    {
+      path: "../fonts/NunitoSans-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/NunitoSans-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../fonts/NunitoSans-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../fonts/NunitoSans-Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+  variable: "--font-nunito",
+  display: "swap",
+});
+
+const crimsonPro = localFont({
+  src: [
+    {
+      path: "../fonts/CrimsonPro-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/CrimsonPro-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../fonts/CrimsonPro-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-crimson",
+  display: "swap",
+});
 
 const locales = ["de", "en"] as const;
 
@@ -64,9 +114,11 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
-      <CookieBanner />
-    </NextIntlClientProvider>
+    <div className={`${nunitoSans.variable} ${crimsonPro.variable}`}>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        {children}
+        <CookieBanner />
+      </NextIntlClientProvider>
+    </div>
   );
 }
