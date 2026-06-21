@@ -24,8 +24,8 @@ export default function Header() {
           <Image
             src="/logo-martinshof.png"
             alt="Martinshof Apartments"
-            width={120}
-            height={120}
+            width={90}
+            height={90}
             priority
             className="h-20 w-auto md:h-24"
           />

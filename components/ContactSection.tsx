@@ -137,6 +137,10 @@ export default function ContactSection() {
             </p>
 
             <p>{t("address")}</p>
+            <div className="pt-2 space-y-1 text-white/75">
+  <p>✦ {t("location1")}</p>
+  <p>✦  {t("location2")}</p>
+</div>
           </div>
         </div>
 

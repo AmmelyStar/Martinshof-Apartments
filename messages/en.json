@@ -147,6 +147,8 @@
 "title": "Write to us",
 "description": "We will get back to you as soon as possible with suitable information.",
 "address": "Hauptstraße 28, 2183 St. Ulrich – Neusiedl/Zaya, Austria",
+"location1": "Only 30 minutes from Vienna",
+"location2": "Just 5 minutes from the motorway",
 
 "fields": {
 "name": "Name *",
@@ -211,7 +213,12 @@
       "title": "Cleaning every 14 days",
       "text": "Clean and reliable"
     }
-  }
+  },
+  "vienna": {
+  "title": "Close to Vienna",
+  "text": "Only 30 minutes from Vienna, 5 minutes from the A5 motorway"
+}
+
 },
 
 

@@ -144,6 +144,9 @@
 "title": "Schreiben Sie uns",
 "description": "Wir melden uns schnellstmöglich mit passenden Informationen bei Ihnen.",
 "address": "Hauptstraße 28, 2183 St. Ulrich – Neusiedl/Zaya, Österreich",
+"location1": "Nur 30 Minuten von Wien",
+"location2": "Nur 5 Minuten zur Autobahn",
+
 
 "fields": {
 "name": "Name *",
@@ -181,12 +184,16 @@
   "title": "So arbeiten wir",
   "description": "Keine komplizierten Buchungswege, sondern eine direkte Abstimmung und eine Lösung, die zum Projekt passt.",
   "button": "Angebot anfordern",
+  
   "process": {
     "rentalDuration": "Flexible Mietdauer: wöchentlich oder monatlich",
     "pricing": "Individuelle Preisgestaltung je nach Bedarf",
     "invoice": "Firmenrechnung selbstverständlich",
     "transparentProcess": "Klare und transparente Abwicklung",
     "shortNotice": "Kurzfristige Lösungen möglich"
+
+
+
   }
 },
 
@@ -207,6 +214,10 @@
     "cleaning": {
       "title": "Reinigung alle 14 Tage",
       "text": "Sauber und zuverlässig"
+    },
+    "vienna": {
+      "title": "Nahe bei Wien",
+      "text": "Nur 30 Minuten von Wien entfernt, 5 Minuten zur A5 Autobahn"
     }
   }
 },

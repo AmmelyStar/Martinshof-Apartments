@@ -63,7 +63,7 @@ export default function Funktional() {
           <div className="absolute left-37.5 top-0 h-62.5 w-47.5 overflow-hidden rounded-[1.7rem] bg-white p-2 shadow-2xl shadow-dark-green/30 ring-1 ring-white/70 md:left-55 md:h-80 md:w-60">
             <div className="relative h-full w-full overflow-hidden rounded-[1.25rem]">
               <Image
-                src="/wein.png"
+                src="/wein.jpg"
                 alt={t("images.livingArea")}
                 fill
                 priority
