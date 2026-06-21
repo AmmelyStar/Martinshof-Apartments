@@ -14,14 +14,8 @@ export default function ConditionsSection() {
   const t = useTranslations("ConditionsSection");
 
   return (
-    <section
-      id="konditionen"
-      className="relative overflow-hidden bg-dark-green py-24 text-white"
-    >
-      <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
-      <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
-
-      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+    <section id="konditionen" className="bg-dark-green py-24 text-white">
+      <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid gap-14 xl:grid-cols-[0.9fr_1.1fr] xl:items-start">
           <div className="text-center xl:text-left">
             <p className="text-sm uppercase tracking-wide text-gold">
@@ -50,7 +44,7 @@ export default function ConditionsSection() {
             {processItems.map((item, index) => (
               <div
                 key={item}
-                className="group grid grid-cols-1 items-center rounded-3xl border border-white/10 bg-white/8 px-6 py-5 text-center backdrop-blur transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/12 sm:grid-cols-[44px_1fr] sm:gap-5 sm:text-left xl:grid-cols-[44px_1fr]"
+                className="group grid grid-cols-1 items-center rounded-3xl border border-white/10 bg-white/8 px-6 py-5 text-center backdrop-blur transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/12 sm:grid-cols-[44px_1fr] sm:gap-5 sm:text-left"
               >
                 <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-2xl bg-gold font-serif text-base font-semibold text-white shadow-lg shadow-black/15 sm:mx-0 xl:h-11 xl:w-11 xl:text-lg">
                   {index + 1}
