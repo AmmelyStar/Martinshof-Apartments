@@ -74,7 +74,7 @@
 
 "Funktional": {
   "eyebrow": "Our apartments",
-  "title": "Functional. Clear. Designed for work teams.",
+  "title": "Functional Clear Designed for work teams",
   "description": "The apartments provide everything employees need during a project: separate sleeping areas, a private kitchen and a quiet environment after work.",
   "images": {
     "bedroom": "Martinshof apartment bedroom",
@@ -212,12 +212,13 @@
     "cleaning": {
       "title": "Cleaning every 14 days",
       "text": "Clean and reliable"
-    }
-  },
-  "vienna": {
+    },
+     "vienna": {
   "title": "Close to Vienna",
   "text": "Only 30 minutes from Vienna, 5 minutes from the A5 motorway"
 }
+  }
+ 
 
 },
 
