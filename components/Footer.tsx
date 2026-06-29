@@ -46,7 +46,7 @@ export default function Footer() {
           <span className="pt-2 text-white/50">
   {t("createdBy")}{" "}
   <Link
-    href="https://coming-soon-beige-beta.vercel.app/"
+    href="https://www.dvi.digital/"
     target="_blank"
     className="hover:text-gold transition"
   >
