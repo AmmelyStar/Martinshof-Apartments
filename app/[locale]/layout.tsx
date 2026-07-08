@@ -85,16 +85,51 @@ export async function generateMetadata({
   });
 
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://martinshof-rothenburg.de";
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://www.martinshof-apartments.at";
 
   return {
     metadataBase: new URL(baseUrl),
+
     title: {
       default: t("title"),
       template: `%s | ${t("siteName")}`,
     },
+
     description: t("description"),
     keywords: t("keywords"),
+
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `${baseUrl}/${locale}`,
+      siteName: t("siteName"),
+      locale,
+      type: "website",
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Martinshof Apartments",
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["/og-image.jpg"],
+    },
+
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        de: `${baseUrl}/de`,
+        en: `${baseUrl}/en`,
+      },
+    },
   };
 }
 
@@ -102,7 +137,10 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({ children, params }: Props) {
+export default async function LocaleLayout({
+  children,
+  params,
+}: Props) {
   const { locale } = await params;
 
   if (!isValidLocale(locale)) {
@@ -111,7 +149,9 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
 
-  const messages = (await import(`../../messages/${locale}.json`)).default;
+  const messages = (
+    await import(`../../messages/${locale}.json`)
+  ).default;
 
   return (
     <div className={`${nunitoSans.variable} ${crimsonPro.variable}`}>
